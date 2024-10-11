@@ -24,6 +24,7 @@ body {
   align-items: center;
   font-family: "Hanken Grotesk", sans-serif;
   flex-direction: column;
+  background-color: var(--pale-blue);
 }
 
 .attribution {
@@ -41,15 +42,6 @@ body {
   width: 500px;
   border-radius: 20px;
   background-color: var(--white);
-  background: linear-gradient(
-      to top,
-      var(--pale-blue),
-      white 7px,
-      transparent 7px
-    ),
-    linear-gradient(to right, var(--pale-blue), white 7px, transparent 7px),
-    linear-gradient(to bottom, var(--pale-blue), white 7px, transparent 7px),
-    linear-gradient(to left, var(--pale-blue), white 7px, transparent 7px);
   height: 512px;
   width: 736px;
 }
@@ -92,41 +84,61 @@ body {
   font-weight: 800;
 }
 
-.of100 {
-  font-size: small;
-  margin-top: -4px;
-}
-
-.summary {
+.summary-section {
   display: flex;
   flex-direction: column;
 }
 
-.button {
+.summary {
   display: flex;
   justify-content: space-between;
-  padding: 12px 32px;
+  align-items: center;
+  margin: 1.5rem 2rem;
+  width: 288px;
+  height: 56px;
+  padding: 0 1rem;
   border-radius: 12px;
-  border: none;
+}
+
+.summary-text {
+  display: flex;
+  align-items: center;
+}
+.summary-text i {
+  margin-right: 6px;
+  margin-top: 6px;
+}
+
+.light-text {
+  color: var(--dark-gray-blue);
+  opacity: 0.5;
+}
+
+.dark-text {
+  color: var(--dark-gray-blue);
+  font-weight: 700;
 }
 
 .reaction {
   color: var(--light-red);
-  background-color: color-mix(hsl(0, 100%, 67%), white, 75%);
-  /* opacity: 0.1; */
+  background-color: #fff6f5;
+  font-weight: 500;
 }
 
 .memory {
-  background-color: var(--orangey-yellow);
-  opacity: 0.5;
+  color: var(--orangey-yellow);
+  font-weight: 500;
+  background-color: #fffbf2;
 }
 
 .verbal {
-  background-color: var(--green-teal);
-  opacity: 0.5;
+  color: var(--green-teal);
+  font-weight: 500;
+  background-color: #f3fafa;
 }
 
 .visual {
-  background-color: var(--pale-blue);
-  opacity: 0.5;
+  color: var(--violet-blue);
+  font-weight: 500;
+  background-color: #f3f3fd;
 }
