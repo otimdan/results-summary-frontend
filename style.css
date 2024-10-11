@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Hanken Grotesk", sans-serif;
+  flex-direction: column;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 32px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.card {
+  display: flex;
+  /* background: linear-gradient(to top, var(--pale-blue)); */
+  width: 500px;
+  border-radius: 20px;
+  background-color: var(--white);
+  background: linear-gradient(
+      to top,
+      var(--pale-blue),
+      white 7px,
+      transparent 7px
+    ),
+    linear-gradient(to right, var(--pale-blue), white 7px, transparent 7px),
+    linear-gradient(to bottom, var(--pale-blue), white 7px, transparent 7px),
+    linear-gradient(to left, var(--pale-blue), white 7px, transparent 7px);
+  height: 512px;
+  width: 736px;
+}
+
+.result {
+  background-color: var(--light-royal-blue);
+  color: var(--white);
+  width: 50%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.percent {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: var(--light-slate-blue);
+  /* background: linear-gradient(to top, var(--violet-blue)); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.comparison {
+  font-size: 12px;
+  text-align: center;
+  margin: 0 16px 20px 16px;
+  font-weight: 350;
+  width: 160px;
+}
+
+.result-percent {
+  font-size: 40px;
+  margin-bottom: -5px;
+  margin-top: 5px;
+  font-weight: 800;
+}
+
+.of100 {
+  font-size: small;
+  margin-top: -4px;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 32px;
+  border-radius: 12px;
+  border: none;
+}
+
+.reaction {
+  color: var(--light-red);
+  background-color: color-mix(hsl(0, 100%, 67%), white, 75%);
+  /* opacity: 0.1; */
+}
+
+.memory {
+  background-color: var(--orangey-yellow);
+  opacity: 0.5;
+}
+
+.verbal {
+  background-color: var(--green-teal);
+  opacity: 0.5;
+}
+
+.visual {
+  background-color: var(--pale-blue);
+  opacity: 0.5;
+}
